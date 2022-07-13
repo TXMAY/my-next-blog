@@ -22,11 +22,7 @@ export default function Home() {
       {blogList.map((blog) => {
         return (
           <div className={styles.blog} key={blog.id}>
-            <div>{blog.id}</div>
             <div>{blog.title}</div>
-            <div>{blog.content}</div>
-            <div>{blog.readTime}</div>
-            <div>{blog.writer}</div>
           </div>
         );
       })}
