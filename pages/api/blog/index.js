@@ -12,5 +12,6 @@ export default async function handler(req, res) {
     VALUES(?, ?, ?, ?)`,
       [req.body.title, req.body.content, req.body.readTime, req.body.writer]
     );
+    res.send("성공");
   }
 }

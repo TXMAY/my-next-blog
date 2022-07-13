@@ -18,10 +18,8 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const clickBlog = (id) => {
-    return () => {
-      router.push(`/blog/${id}`);
-    };
+  const clickBlog = (id) => () => {
+    router.push(`/blog/${id}`);
   };
 
   return (
